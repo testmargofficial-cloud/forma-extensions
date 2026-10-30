@@ -1,0 +1,25 @@
+{
+  "id": "vercel",
+  "name": "Vercel",
+  "version": "1.0.0",
+  "publisher": "forma",
+  "kind": "connector",
+  "description": "Link a Vercel token and list projects without shipping the Vercel CLI in the installer.",
+  "homepage": "https://vercel.com/docs/cli",
+  "binaries": ["vercel"],
+  "secret": { "title": "Vercel token", "env": "VERCEL_TOKEN" },
+  "commands": [
+    {
+      "id": "whoami",
+      "title": "Who am I",
+      "binary": "vercel",
+      "argv": ["whoami"]
+    },
+    {
+      "id": "projects",
+      "title": "List projects",
+      "binary": "vercel",
+      "argv": ["project", "ls"]
+    }
+  ]
+}
