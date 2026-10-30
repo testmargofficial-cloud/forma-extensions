@@ -1,0 +1,35 @@
+{
+  "id": "docker-compose",
+  "name": "Docker Compose",
+  "version": "1.0.0",
+  "publisher": "forma",
+  "kind": "tool",
+  "description": "Build, start and stop Compose stacks from a trusted workspace folder.",
+  "homepage": "https://docs.docker.com/compose/",
+  "binaries": ["docker"],
+  "commands": [
+    {
+      "id": "ps",
+      "title": "Compose status",
+      "binary": "docker",
+      "argv": ["compose", "ps"],
+      "cwd": "workspace"
+    },
+    {
+      "id": "up",
+      "title": "Compose up",
+      "binary": "docker",
+      "argv": ["compose", "up", "-d"],
+      "cwd": "workspace",
+      "confirm": true
+    },
+    {
+      "id": "down",
+      "title": "Compose down",
+      "binary": "docker",
+      "argv": ["compose", "down"],
+      "cwd": "workspace",
+      "confirm": true
+    }
+  ]
+}
