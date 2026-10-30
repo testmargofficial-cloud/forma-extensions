@@ -1,0 +1,30 @@
+{
+  "id": "kubernetes",
+  "name": "Kubernetes",
+  "version": "1.0.0",
+  "publisher": "forma",
+  "kind": "tool",
+  "description": "Read cluster context, pods and services with kubectl on PATH.",
+  "homepage": "https://kubernetes.io/docs/reference/kubectl/",
+  "binaries": ["kubectl"],
+  "commands": [
+    {
+      "id": "context",
+      "title": "Current context",
+      "binary": "kubectl",
+      "argv": ["config", "current-context"]
+    },
+    {
+      "id": "pods",
+      "title": "List pods",
+      "binary": "kubectl",
+      "argv": ["get", "pods", "-A"]
+    },
+    {
+      "id": "services",
+      "title": "List services",
+      "binary": "kubectl",
+      "argv": ["get", "svc", "-A"]
+    }
+  ]
+}
