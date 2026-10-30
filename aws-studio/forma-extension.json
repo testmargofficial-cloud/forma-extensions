@@ -1,7 +1,7 @@
 {
   "id": "aws-studio",
   "name": "Amazon Web Services",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "publisher": "forma",
   "kind": "studio",
   "description": "GitHub-updated AWS machine room: machines, disks, public addresses and extra AWS CLI tools. New AWS buttons ship here without a new Forma EXE.",
@@ -58,6 +58,18 @@
       "title": "SSM agents",
       "binary": "aws",
       "argv": ["ssm", "describe-instance-information"]
+    },
+    {
+      "id": "volumes",
+      "title": "Disks",
+      "binary": "aws",
+      "argv": ["ec2", "describe-volumes"]
+    },
+    {
+      "id": "snapshots",
+      "title": "Disk snapshots",
+      "binary": "aws",
+      "argv": ["ec2", "describe-snapshots", "--owner-ids", "self"]
     }
   ]
 }
