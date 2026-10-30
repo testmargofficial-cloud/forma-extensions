@@ -1,0 +1,34 @@
+{
+  "id": "terraform",
+  "name": "Terraform",
+  "version": "1.0.0",
+  "publisher": "forma",
+  "kind": "tool",
+  "description": "Plan infrastructure from a workspace. Apply and destroy stay confirm-gated.",
+  "homepage": "https://developer.hashicorp.com/terraform",
+  "binaries": ["terraform"],
+  "commands": [
+    {
+      "id": "init",
+      "title": "Terraform init",
+      "binary": "terraform",
+      "argv": ["init"],
+      "cwd": "workspace"
+    },
+    {
+      "id": "plan",
+      "title": "Terraform plan",
+      "binary": "terraform",
+      "argv": ["plan"],
+      "cwd": "workspace"
+    },
+    {
+      "id": "apply",
+      "title": "Terraform apply",
+      "binary": "terraform",
+      "argv": ["apply", "-auto-approve"],
+      "cwd": "workspace",
+      "confirm": true
+    }
+  ]
+}
