@@ -1,0 +1,25 @@
+{
+  "id": "postgres",
+  "name": "PostgreSQL",
+  "version": "1.0.0",
+  "publisher": "forma",
+  "kind": "tool",
+  "description": "Talk to Postgres with psql already installed on the machine.",
+  "homepage": "https://www.postgresql.org/docs/current/app-psql.html",
+  "binaries": ["psql"],
+  "commands": [
+    {
+      "id": "version",
+      "title": "psql version",
+      "binary": "psql",
+      "argv": ["--version"]
+    },
+    {
+      "id": "databases",
+      "title": "List databases",
+      "binary": "psql",
+      "argv": ["-c", "\\l"],
+      "fields": [{ "name": "host", "label": "Host", "placeholder": "127.0.0.1" }]
+    }
+  ]
+}
