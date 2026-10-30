@@ -1,0 +1,57 @@
+{
+  "id": "gcloud",
+  "name": "Google Cloud",
+  "version": "1.1.0",
+  "publisher": "forma",
+  "kind": "connector",
+  "description": "Google Cloud VMs, disks, addresses, Cloud Run and Artifact Registry via gcloud.",
+  "homepage": "https://cloud.google.com/sdk/gcloud",
+  "binaries": ["gcloud"],
+  "studio": {
+    "cloud": "gcp",
+    "machineLabel": "Machine",
+    "diskLabel": "Disk",
+    "ipLabel": "Public address",
+    "linkedPhrase": "linked to",
+    "idleDisk": "Not linked to a machine. Google Cloud still bills this disk.",
+    "idleIp": "Not linked to a running machine. This reserved address still bills."
+  },
+  "commands": [
+    {
+      "id": "config",
+      "title": "Active config",
+      "binary": "gcloud",
+      "argv": ["config", "list"]
+    },
+    {
+      "id": "vms",
+      "title": "Machines",
+      "binary": "gcloud",
+      "argv": ["compute", "instances", "list"]
+    },
+    {
+      "id": "disks",
+      "title": "Disks",
+      "binary": "gcloud",
+      "argv": ["compute", "disks", "list"]
+    },
+    {
+      "id": "ips",
+      "title": "Public addresses",
+      "binary": "gcloud",
+      "argv": ["compute", "addresses", "list"]
+    },
+    {
+      "id": "run",
+      "title": "Cloud Run services",
+      "binary": "gcloud",
+      "argv": ["run", "services", "list"]
+    },
+    {
+      "id": "artifacts",
+      "title": "Artifact Registry",
+      "binary": "gcloud",
+      "argv": ["artifacts", "repositories", "list"]
+    }
+  ]
+}
