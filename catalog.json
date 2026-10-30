@@ -1,0 +1,190 @@
+{
+  "name": "Forma extensions",
+  "url": "https://raw.githubusercontent.com/testmargofficial-cloud/forma-extensions/main/catalog.json",
+  "extensions": [
+    {
+      "id": "aws-studio",
+      "name": "Amazon Web Services",
+      "version": "1.1.0",
+      "publisher": "forma",
+      "kind": "studio",
+      "description": "GitHub-updated AWS machine room. New AWS buttons ship here without a new Forma EXE.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "aws-studio",
+      "binaries": [
+        "aws"
+      ],
+      "official": true,
+      "featured": true,
+      "size": "8 KB"
+    },
+    {
+      "id": "docker-compose",
+      "name": "Docker Compose",
+      "version": "1.0.0",
+      "publisher": "forma",
+      "kind": "tool",
+      "description": "Build, start and stop Compose stacks from a trusted workspace folder.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "docker-compose",
+      "binaries": [
+        "docker"
+      ],
+      "official": true,
+      "featured": true,
+      "size": "6 KB"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "version": "1.0.0",
+      "publisher": "forma",
+      "kind": "tool",
+      "description": "Read cluster context, pods and services with kubectl on PATH.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "kubernetes",
+      "binaries": [
+        "kubectl"
+      ],
+      "official": true,
+      "featured": true,
+      "size": "6 KB"
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "version": "1.0.0",
+      "publisher": "forma",
+      "kind": "tool",
+      "description": "Plan infrastructure from a workspace. Apply and destroy stay confirm-gated.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "terraform",
+      "binaries": [
+        "terraform"
+      ],
+      "official": true,
+      "featured": true,
+      "size": "6 KB"
+    },
+    {
+      "id": "azure",
+      "name": "Azure",
+      "version": "1.1.0",
+      "publisher": "forma",
+      "kind": "connector",
+      "description": "Azure machines, disks, public IPs, resource groups and web apps via the Azure CLI.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "azure",
+      "binaries": [
+        "az"
+      ],
+      "official": true,
+      "size": "6 KB"
+    },
+    {
+      "id": "gcloud",
+      "name": "Google Cloud",
+      "version": "1.1.0",
+      "publisher": "forma",
+      "kind": "connector",
+      "description": "Google Cloud VMs, disks, addresses, Cloud Run and Artifact Registry via gcloud.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "gcloud",
+      "binaries": [
+        "gcloud"
+      ],
+      "official": true,
+      "size": "6 KB"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "version": "1.0.0",
+      "publisher": "forma",
+      "kind": "connector",
+      "description": "Link a Vercel token and list projects without shipping the Vercel CLI in the installer.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "vercel",
+      "binaries": [
+        "vercel"
+      ],
+      "official": true,
+      "size": "5 KB"
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "version": "1.0.0",
+      "publisher": "forma",
+      "kind": "connector",
+      "description": "Whoami and Workers publish through wrangler on this PC.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "cloudflare",
+      "binaries": [
+        "wrangler"
+      ],
+      "official": true,
+      "size": "5 KB"
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "version": "1.1.0",
+      "publisher": "forma",
+      "kind": "connector",
+      "description": "Droplets, volumes, reserved IPs and registries with doctl after a personal token.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "digitalocean",
+      "binaries": [
+        "doctl"
+      ],
+      "official": true,
+      "size": "6 KB"
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL",
+      "version": "1.0.0",
+      "publisher": "forma",
+      "kind": "tool",
+      "description": "Talk to Postgres with psql already installed on the machine.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "postgres",
+      "binaries": [
+        "psql"
+      ],
+      "official": true,
+      "size": "4 KB"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "version": "1.0.0",
+      "publisher": "forma",
+      "kind": "tool",
+      "description": "Ping and inspect keys through redis-cli on PATH.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "redis",
+      "binaries": [
+        "redis-cli"
+      ],
+      "official": true,
+      "size": "4 KB"
+    },
+    {
+      "id": "express-api",
+      "name": "Express API starter",
+      "version": "1.0.0",
+      "publisher": "forma",
+      "kind": "template",
+      "description": "Copy a small Express API into a trusted workspace when you need a backend folder.",
+      "github": "testmargofficial-cloud/forma-extensions",
+      "path": "express-api",
+      "binaries": [
+        "node"
+      ],
+      "official": true,
+      "size": "8 KB"
+    }
+  ]
+}
