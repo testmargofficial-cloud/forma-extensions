@@ -1,0 +1,52 @@
+{
+  "id": "digitalocean",
+  "name": "DigitalOcean",
+  "version": "1.1.0",
+  "publisher": "forma",
+  "kind": "connector",
+  "description": "Droplets, volumes, reserved IPs and registries with doctl after a personal token.",
+  "homepage": "https://docs.digitalocean.com/reference/doctl/",
+  "binaries": ["doctl"],
+  "secret": { "title": "DigitalOcean token", "env": "DIGITALOCEAN_ACCESS_TOKEN" },
+  "studio": {
+    "cloud": "digitalocean",
+    "machineLabel": "Droplet",
+    "diskLabel": "Volume",
+    "ipLabel": "Reserved IP",
+    "linkedPhrase": "linked to",
+    "idleDisk": "Not linked to a droplet. DigitalOcean still bills this volume.",
+    "idleIp": "Not linked to a running droplet. This reserved address still bills."
+  },
+  "commands": [
+    {
+      "id": "account",
+      "title": "Account",
+      "binary": "doctl",
+      "argv": ["account", "get"]
+    },
+    {
+      "id": "droplets",
+      "title": "Droplets",
+      "binary": "doctl",
+      "argv": ["compute", "droplet", "list"]
+    },
+    {
+      "id": "volumes",
+      "title": "Volumes",
+      "binary": "doctl",
+      "argv": ["compute", "volume", "list"]
+    },
+    {
+      "id": "ips",
+      "title": "Reserved IPs",
+      "binary": "doctl",
+      "argv": ["compute", "floating-ip", "list"]
+    },
+    {
+      "id": "registry",
+      "title": "Container registry",
+      "binary": "doctl",
+      "argv": ["registry", "get"]
+    }
+  ]
+}
