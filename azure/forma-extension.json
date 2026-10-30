@@ -1,0 +1,57 @@
+{
+  "id": "azure",
+  "name": "Azure",
+  "version": "1.1.0",
+  "publisher": "forma",
+  "kind": "connector",
+  "description": "Azure machines, disks, public IPs, resource groups and web apps via the Azure CLI.",
+  "homepage": "https://learn.microsoft.com/cli/azure/",
+  "binaries": ["az"],
+  "studio": {
+    "cloud": "azure",
+    "machineLabel": "Machine",
+    "diskLabel": "Disk",
+    "ipLabel": "Public address",
+    "linkedPhrase": "linked to",
+    "idleDisk": "Not linked to a machine. Azure still bills this disk.",
+    "idleIp": "Not linked to a running machine. This reserved address still bills."
+  },
+  "commands": [
+    {
+      "id": "account",
+      "title": "Show account",
+      "binary": "az",
+      "argv": ["account", "show"]
+    },
+    {
+      "id": "groups",
+      "title": "Resource groups",
+      "binary": "az",
+      "argv": ["group", "list", "-o", "table"]
+    },
+    {
+      "id": "vms",
+      "title": "Machines",
+      "binary": "az",
+      "argv": ["vm", "list", "-d", "-o", "table"]
+    },
+    {
+      "id": "disks",
+      "title": "Disks",
+      "binary": "az",
+      "argv": ["disk", "list", "-o", "table"]
+    },
+    {
+      "id": "ips",
+      "title": "Public addresses",
+      "binary": "az",
+      "argv": ["network", "public-ip", "list", "-o", "table"]
+    },
+    {
+      "id": "webapps",
+      "title": "Web apps",
+      "binary": "az",
+      "argv": ["webapp", "list", "-o", "table"]
+    }
+  ]
+}
