@@ -1,0 +1,27 @@
+{
+  "id": "cloudflare",
+  "name": "Cloudflare",
+  "version": "1.0.0",
+  "publisher": "forma",
+  "kind": "connector",
+  "description": "Whoami and Workers publish through wrangler on this PC.",
+  "homepage": "https://developers.cloudflare.com/workers/wrangler/",
+  "binaries": ["wrangler"],
+  "secret": { "title": "Cloudflare API token", "env": "CLOUDFLARE_API_TOKEN" },
+  "commands": [
+    {
+      "id": "whoami",
+      "title": "Who am I",
+      "binary": "wrangler",
+      "argv": ["whoami"]
+    },
+    {
+      "id": "deploy",
+      "title": "Deploy worker",
+      "binary": "wrangler",
+      "argv": ["deploy"],
+      "cwd": "workspace",
+      "confirm": true
+    }
+  ]
+}
