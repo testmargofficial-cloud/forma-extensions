@@ -1,0 +1,24 @@
+{
+  "id": "redis",
+  "name": "Redis",
+  "version": "1.0.0",
+  "publisher": "forma",
+  "kind": "tool",
+  "description": "Ping and inspect keys through redis-cli on PATH.",
+  "homepage": "https://redis.io/docs/latest/commands/",
+  "binaries": ["redis-cli"],
+  "commands": [
+    {
+      "id": "ping",
+      "title": "Ping",
+      "binary": "redis-cli",
+      "argv": ["ping"]
+    },
+    {
+      "id": "info",
+      "title": "Server info",
+      "binary": "redis-cli",
+      "argv": ["info", "server"]
+    }
+  ]
+}
