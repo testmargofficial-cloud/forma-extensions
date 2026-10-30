@@ -1,0 +1,12 @@
+{
+  "id": "express-api",
+  "name": "Express API starter",
+  "version": "1.0.0",
+  "publisher": "forma",
+  "kind": "template",
+  "description": "Copy a small Express API into a trusted workspace when you need a backend folder.",
+  "homepage": "https://expressjs.com/",
+  "binaries": ["node"],
+  "files": ["forma-extension.json", "templates/package.json", "templates/server.js"],
+  "commands": []
+}
