@@ -1,0 +1,63 @@
+{
+  "id": "aws-studio",
+  "name": "Amazon Web Services",
+  "version": "1.1.0",
+  "publisher": "forma",
+  "kind": "studio",
+  "description": "GitHub-updated AWS machine room: machines, disks, public addresses and extra AWS CLI tools. New AWS buttons ship here without a new Forma EXE.",
+  "homepage": "https://docs.aws.amazon.com/",
+  "binaries": ["aws"],
+  "studio": {
+    "cloud": "aws",
+    "machineLabel": "Machine",
+    "diskLabel": "Disk",
+    "ipLabel": "Public address",
+    "linkedPhrase": "linked to",
+    "idleDisk": "Not linked to a machine. AWS still bills this disk.",
+    "idleIp": "Not linked to a running machine. This reserved address still bills."
+  },
+  "commands": [
+    {
+      "id": "identity",
+      "title": "Who am I",
+      "binary": "aws",
+      "argv": ["sts", "get-caller-identity"]
+    },
+    {
+      "id": "clusters",
+      "title": "ECS clusters",
+      "binary": "aws",
+      "argv": ["ecs", "list-clusters"]
+    },
+    {
+      "id": "eks",
+      "title": "EKS clusters",
+      "binary": "aws",
+      "argv": ["eks", "list-clusters"]
+    },
+    {
+      "id": "loadbalancers",
+      "title": "Load balancers",
+      "binary": "aws",
+      "argv": ["elbv2", "describe-load-balancers"]
+    },
+    {
+      "id": "logs",
+      "title": "Log groups",
+      "binary": "aws",
+      "argv": ["logs", "describe-log-groups"]
+    },
+    {
+      "id": "vpcs",
+      "title": "Networks (VPC)",
+      "binary": "aws",
+      "argv": ["ec2", "describe-vpcs"]
+    },
+    {
+      "id": "ssm",
+      "title": "SSM agents",
+      "binary": "aws",
+      "argv": ["ssm", "describe-instance-information"]
+    }
+  ]
+}
